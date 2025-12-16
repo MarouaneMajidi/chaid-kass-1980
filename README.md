@@ -74,9 +74,9 @@ fig = visualize_tree(tree, method="plot")          # Plot
 print(visualize_tree(tree, method="rules"))        # Decision rules
 
 # Analysis tables
-print(get_predictor_summary_table(tree, node_id=0))                    # Table 10
-print(get_all_pairwise_at_step(tree, 0, 'education', step=0))          # Table 3/5/9
-_, table = get_successive_merges_table(tree, 0, 'education')           # Table 6
+print(get_predictor_summary_table(tree, node_id=0))
+print(get_all_pairwise_at_step(tree, 0, 'education', step=0))
+_, table = get_successive_merges_table(tree, 0, 'education')
 print(table)
 ```
 
