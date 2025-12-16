@@ -115,7 +115,9 @@ chaid/
 
 ## References
 
-Kass, G.V. (1980). An exploratory technique for investigating large quantities of categorical data. _Applied Statistics_, 29(2), 119-127.
+Kass, G. V. (1980). An exploratory technique for investigating large quantities of categorical data. Applied Statistics, 29(2), 119–127.
+
+Ritschard, G. (2013). CHAID and earlier supervised tree methods. In J. J. McArdle & G. Ritschard (Eds.), Contemporary issues in exploratory data mining in behavioral sciences (pp. 48–74). Routledge, New York.
 
 ## License
 
