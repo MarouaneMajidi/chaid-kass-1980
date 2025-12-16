@@ -85,7 +85,7 @@ print(table)
 | Parameter          | Default | Description                                      |
 | ------------------ | ------- | ------------------------------------------------ |
 | `alpha_merge`      | 0.05    | Significance level for merging (p > α → merge)   |
-| `alpha_split`      | 0.05    | Significance level for splitting (p < α → split) |
+| `alpha_split`      | 0.049    | Significance level for splitting (p < α → split) |
 | `max_depth`        | None    | Maximum tree depth                               |
 | `min_parent_size`  | 30      | Minimum samples to attempt split                 |
 | `min_child_size`   | 10      | Minimum samples per child node                   |
