@@ -1335,7 +1335,7 @@ def get_predictor_summary_table(
     # Create formatted output
     lines = []
     lines.append("╔" + "═" * 100 + "╗")
-    lines.append("║" + " TABLE 10: Summary of Possible First Level Splits ".center(100) + "║")
+    lines.append("║" + " Summary of Possible First Level Splits ".center(100) + "║")
     lines.append("╠" + "═" * 100 + "╣")
     
     # Header
