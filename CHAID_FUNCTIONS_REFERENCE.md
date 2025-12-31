@@ -159,14 +159,14 @@ config_floating = PredictorConfig(
 
 Without `PredictorConfig`, ordinal categories are sorted **alphabetically**, which may not be correct:
 
-- Alphabetical: `['2-5h', '5-10h', '<2h', '>10h']` ❌
+- Alphabetical: `['2-5h', '5-10h', '<2h', '>10h']`
 - Natural order: `['<2h', '2-5h', '5-10h', '>10h']` ✓
 
 ```python
-# ❌ Without PredictorConfig - alphabetical order
+# Without PredictorConfig - alphabetical order
 predictor_types = {'study_time': PredictorType.ORDINAL}
 
-# ✓ With PredictorConfig - correct natural order
+# With PredictorConfig - correct natural order
 predictor_types = {
     'study_time': PredictorConfig(
         name='study_time',
@@ -235,7 +235,7 @@ Depth: 2
 Leaves: 6
 ================================================================================
 
-└── [Node 0] 📊 SPLIT (n=400)
+└── [Node 0] SPLIT (n=400)
     Modal: Success (222/400 = 55.5%)
     Dist: Fail: 178 (44%) | Success: 222 (56%)
     Split variable: education (nominal)
@@ -247,7 +247,7 @@ Leaves: 6
       [2] None → Node 5 (n=61)
       [3] Vocational → Node 6 (n=104)
 
-    ├── [Node 1] 📊 SPLIT (n=235)
+    ├── [Node 1] SPLIT (n=235)
     │   Modal: Success (158/235 = 67.2%)
     │   Split variable: study_hours (ordinal)
     │   χ² = 12.2382, df = 2
@@ -787,7 +787,7 @@ mother_education  ORDINAL            4        2   10.089299   1 1.491329e-03  4.
 | Chi-sq    | Chi-square statistic for the final grouping   |
 | df        | Degrees of freedom                            |
 | p-value   | Adjusted p-value (with Bonferroni if enabled) |
-| Selected  | ★ if this predictor was chosen for the split  |
+| Selected  | * if this predictor was chosen for the split  |
 
 ---
 
